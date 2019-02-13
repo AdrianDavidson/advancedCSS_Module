@@ -1,0 +1,511 @@
+/*ADRIAN DAVIDSON
+R00138984
+DWEB*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+/*======================================
+          1st Page styling
+======================================*/
+#table-container{
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#container{
+    display: table-cell;
+    vertical-align: middle;
+}
+#main{
+    display: inline-block;
+}
+#text{
+    text-align: left;
+    border: 1px solid white;
+    font-size: 70px;
+    padding: 5px;
+    font-family: 'Dancing Script', cursive;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#text :hover{
+  color: grey;
+}
+#Overflow{
+  overflow: hidden;
+}
+#slider div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+#slide1 {
+  background-image: url(img/bck2.jpg);
+  right: -100%;
+}
+#slide2 {
+  background-image: url(img/bck2.jpg);
+  right: -200%;
+}
+#slide3{
+    background-image: url(img/bck3.jpg);
+    right: -300%;
+}
+#slide4 {
+    background-image: url(img/bck4.jpg);
+    right: -400%;
+}
+#slider{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-animation: slider 10s infinite;
+  animation: slider 15s infinite;
+}
+
+#slider{
+    transform: translateX(-100%);
+}
+
+#animation_page{
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes slider {
+    0%   {right: 0%; }
+    25%  {right: 100%;}
+    50%  {right: 200%; }
+    75%  {right: 300%;}
+    100% {right: 0%;}
+}
+
+/*======================================
+          2nd Page styling
+======================================*/
+#animation_page{
+  background-color: grey;
+}
+#heading{
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: 'Nova Script', cursive;
+}
+#animation{
+  width: 65%;
+  height: 100%;
+  margin-left: 17%;
+}
+#animation li{
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  background-image: url(img/pyramidBck.jpg);
+  overflow: hidden;
+  margin: 5px;
+}
+#animation li:nth-child(1){
+  margin-left: 35%;
+}
+#animation li:nth-child(2){
+  margin-left: 24%;
+}
+#animation li:nth-child(4){
+  margin-left: 15%;
+}
+.door {
+  width: 200px;
+  height: 150px;
+  background-image: url(img/pyramidfrnt.jpg);
+  position: relative;
+  transition: 1s ease-in;
+}
+#animation:hover .door {
+  transition: 1s ease-in;
+  margin-left: 100%;
+}
+
+/*======================================
+          Image Positioning
+======================================*/
+#animation li:nth-child(1){
+  background-position: -727px -282px;
+}
+#animation li:nth-child(2){
+  background-position: -877px 787px;
+}
+#animation li:nth-child(3){
+  background-position: 977px 811px;
+}
+#animation li:nth-child(4){
+  background-position: -788px center;
+}
+#animation li:nth-child(5){
+  background-position: -984px center;
+}
+#animation li:nth-child(6){
+  background-position: -1192px center;
+}
+#animation li:nth-child(7){
+  background-position: -553px 461px;
+}
+#animation li:nth-child(8) {
+  background-position: -849px -663px;
+}
+#animation li:nth-child(9){
+  background-position: 994px 499px;
+}
+#animation li:nth-child(10){
+  background-position: 794px 499px;
+}
+/*========================================*/
+#animation li:nth-child(1) .door{
+  background-position: -1021px 1970px;
+}
+#animation li:nth-child(2) .door{
+  background-position: -1235px 1879px;
+}
+#animation li:nth-child(3) .door{
+  background-position: -1417px 1873px;
+}
+#animation li:nth-child(4) .door{
+  background-position: 861px center;
+}
+#animation li:nth-child(5) .door{
+  background-position: -1386px center;
+}
+#animation li:nth-child(6) .door{
+  background-position: -1540px center;
+}
+#animation li:nth-child(7) .door{
+  background-position: 9007px 263px;
+}
+#animation li:nth-child(8) .door{
+  background-position: 8788px 263px;
+}
+#animation li:nth-child(9) .door{
+    background-position: 8604px 263px;
+}
+#animation li:nth-child(10) .door{
+      background-position: 8389px 265px;
+}
+
+/*======================================
+          3rd Page styling
+======================================*/
+body{
+  background-color: black;
+}
+#ln{
+  background-image: url(img/ln.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
+}
+#gig{
+  background-image: url(img/gig.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
+}
+#job{
+  background-image: url(img/job.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
+}
+#pagewrap {
+	padding: 5px;
+	width: 1000px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#ln {
+	width: 310px;
+	float: left;
+	padding: 5px 15px;
+  position: relative;
+}
+.text{
+  width: 303px;
+	float: left;
+	padding: 5px 15px;
+  background-color: white;
+  height: 300px;
+}
+#gig {
+	width: 300px;
+	float: left;
+	padding: 5px 15px;
+  position: relative;
+}
+#job {
+	width: 300px;
+	padding: 5px 15px;
+	float: left;
+  position: relative;
+}
+h1{
+  color: white;
+  font-size: 60px;
+}
+h2{
+  color: white;
+  font-size: 40px;
+}
+h3{
+  background-color: white;
+  font-size: 30px;
+}
+#social_media{
+  float: right;
+  opacity: 0.5;
+}
+#social_media:hover {
+  opacity: 1;
+}
+.age_of_article{
+  position: absolute;
+  color: black;
+  padding: 2px 10px;
+  background-color:rgba(200,200,200,0.5);
+  border-top-left-radius: 10px;
+  font-size: 20px;
+  z-index: 999;
+  bottom: 0;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+#ln .overlay{
+  background-color: red;
+}
+#gig .overlay{
+  background-color: green;
+}
+#job .overlay{
+  background-color: blue;
+}
+.overlay:hover{
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/*======================================
+          Media Queries
+======================================*/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+	#pagewrap {
+		width: 94%;
+	}
+	#job {
+		width: 42%;
+		padding: 1% 4%;
+	}
+	#gig {
+		width: 42%;
+		padding: 1% 4%;
+		float: right;
+	}
+
+	#ln {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+  h1{
+    color: white;
+    font-size: 60px;
+  }
+  h2{
+    color: white;
+    font-size: 40px;
+  }
+  h3{
+    background-color: white;
+    font-size: 30px;
+  }
+  .text{
+    width: 42%;
+  	padding: 1% 4%;
+  	float: left;
+  }
+  h3{
+      background-color: white;
+      font-size: 1em;
+  }
+}
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#ln {
+		width: auto;
+		float: none;
+	}
+
+	#gig {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+
+	#job {
+		width: auto;
+		float: none;
+	}
+  .text{
+    width: auto;
+  	padding: 4%;
+  	float: right;
+  }
+  h3{
+    width: auto;
+    background-color: white;
+    font-size: 30px;
+  }
+  h1{
+    color: white;
+    font-size: 60px;
+  }
+  h2{
+    color: white;
+    font-size: 40px;
+  }
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+}
+
+/*======================================
+                Menu
+======================================*/
+
+
+#topmenu li{
+  display: inline-block;
+  background: black;
+  border: solid 1px white;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+#topmenu li a{
+  color: white;
+}
+#topmenu #menu1{
+  color: white;
+  padding-top: 12px;
+  position: absolute;
+  z-index: 999;
+}
+#topmenu #menu2{
+  background: red;
+  position: absolute;
+  padding-top: 12px;
+  transition: 1s ease-in;
+}
+#topmenu #menu3{
+  background: red;
+  position: absolute;
+  padding-top: 12px;
+  transition: 1s ease-in;
+}
+#topmenu #menu4{
+  background: red;
+  position: absolute;
+  padding-top: 12px;
+  transition: 1s ease-in;
+}
+#topmenu:hover #menu2{
+  margin-left: 80px;
+}
+#topmenu:hover #menu3{
+  margin-left: 160px;
+}
+#topmenu:hover #menu4{
+  margin-left: 240px;
+}
+
+/*======================================
+          Media Queries
+======================================*/
+/*@media screen and (max-width: 980px) {
+  li a {
+    color: #000;
+    background: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+  }
+  #topmenu #menu1 {
+    background-image: url(img/menu.png);
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    background-repeat: no-repeat;
+    text-indent: -99999px
+  }
+
+  #topmenu #menu3 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .fanopen {
+    position: block;
+  }
+
+  .fanclosed li a {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    top: 0;
+    z-index: -99;
+  }
+
+  #animation_page .fanclosed #menu3 {
+    border: none;
+  }
+}*/
